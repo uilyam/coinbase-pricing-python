@@ -14,10 +14,10 @@ Requests - To make HTTP GET requests to the Coinbase API.
 
 ## Getting Started
 
-With (Pipenv)[] installed, run:
+Add the following to the packages section of your [Pipenv's Pipfile](https://github.com/pypa/pipenv)
 
-```bash
-pipenv install https://github.com/uilyam/coinbase-pricing-python.git
+```text
+cbp = {git = "https://github.com/uilyam/coinbase-pricing-python.git"}
 ```
 
 ## The Design
