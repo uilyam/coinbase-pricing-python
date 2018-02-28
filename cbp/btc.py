@@ -24,7 +24,7 @@ def get_btc_spot(exchange_rate):
     return get_btc(exchange_rate, PRICE_SPOT)
 
 def get_btc_sell(exchange_rate):
-    """Get the current Bitcoin Buy price for a given exchange rate.
+    """Get the current Bitcoin Sell price for a given exchange rate.
     
     Arguments:
         exchange_rate {string} -- The supported exchange rate to denominate the price in.

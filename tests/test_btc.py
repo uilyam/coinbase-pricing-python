@@ -7,7 +7,7 @@ class TestBTC(unittest.TestCase):
     """Unit tests for cbp.btc.py"""
 
     def test_get_btc_exists(self):
-        """Test that the get_btc function exists"""
+        """Test that the get_btc function exists/"""
         self.assertIsNotNone(get_btc)
 
     @patch('cbp.btc.get_price')
@@ -24,7 +24,7 @@ class TestBTC(unittest.TestCase):
         self.assertEqual(price, 70.2)
 
     def test_get_btc_buy_exists(self):
-        """Test that the get_btc_buy function exists"""
+        """Test that the get_btc_buy function exists."""
         self.assertIsNotNone(get_btc_buy)
 
     @patch('cbp.btc.get_btc')
@@ -35,13 +35,13 @@ class TestBTC(unittest.TestCase):
 
     @patch('cbp.btc.get_btc')
     def test_get_btc_buy_returns_get_btc(self, get_btc_patch):
-        """Test get_btc_buy returns the value of get_btc"""
+        """Test get_btc_buy returns the value of get_btc."""
         get_btc_patch.return_value = 70.2
         price = get_btc_buy(EXCHANGE_RATE_USD)
         self.assertEqual(price, 70.2)
 
     def test_get_btc_sell_exists(self):
-        """Test that the get_btc_sell function exists"""
+        """Test that the get_btc_sell function exists."""
         self.assertIsNotNone(get_btc_sell)
 
     @patch('cbp.btc.get_btc')
@@ -52,13 +52,13 @@ class TestBTC(unittest.TestCase):
 
     @patch('cbp.btc.get_btc')
     def test_get_btc_sell_returns_get_btc(self, get_btc_patch):
-        """Test get_btc_sell returns the value of get_btc"""
+        """Test get_btc_sell returns the value of get_btc."""
         get_btc_patch.return_value = 70.2
         price = get_btc_sell(EXCHANGE_RATE_USD)
         self.assertEqual(price, 70.2)
 
     def test_get_btc_spot_exists(self):
-        """Test that the get_btc_spot function exists"""
+        """Test that the get_btc_spot function exists."""
         self.assertIsNotNone(get_btc_spot)
 
     @patch('cbp.btc.get_btc')
@@ -69,7 +69,7 @@ class TestBTC(unittest.TestCase):
 
     @patch('cbp.btc.get_btc')
     def test_get_btc_spot_returns_get_btc(self, get_btc_patch):
-        """Test get_btc_spot returns the value of get_btc"""
+        """Test get_btc_spot returns the value of get_btc."""
         get_btc_patch.return_value = 70.2
         price = get_btc_spot(EXCHANGE_RATE_USD)
         self.assertEqual(price, 70.2)

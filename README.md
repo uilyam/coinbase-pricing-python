@@ -4,11 +4,9 @@
 
 Another Python wrapper for Coinbase's Pricing API.  I wanted something modular and lightweight that I could then package into other projects.
 
-## TODO
+## Roadmap
 
-1. Add BTH, ETH, LTC.
-2. Add bulk methods to above functions.
-3. Tests for 1 & 2.
+See [Projects Page](https://github.com/uilyam/coinbase-pricing-python/projects/1)
 
 ## Dependencies
 
